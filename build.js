@@ -1,7 +1,3 @@
-/**
- * 根据 index.json 生成「张灵韵小说」静态站点到 dist/
- * 用法: node build.js
- */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -41,17 +37,12 @@ function escapeHtml(str) {
     .replace(/'/g, "&#39;");
 }
 
-/**
- * 将 md 中的图片路径解析为本地源文件，并返回在章节 HTML 中可用的相对路径。
- * 支持：相对路径、/article/novel-xx/xxx.jpg、绝对本地路径
- */
 function resolveLocalImage(href, novelId, mdFileDir) {
   if (typeof href !== "string" || !href.trim()) {
     fail(`图片路径无效: ${href}`);
   }
   const raw = href.trim();
 
-  // http(s) 外链不复制
   if (/^https?:\/\//i.test(raw) || raw.startsWith("//")) {
     return { external: true, src: raw };
   }
@@ -60,14 +51,11 @@ function resolveLocalImage(href, novelId, mdFileDir) {
   if (path.isAbsolute(raw) && fs.existsSync(raw)) {
     absSource = raw;
   } else if (raw.startsWith("/")) {
-    // /article/novel-03/1.jpg → ROOT/novel-03/1.jpg
-    // /novel-03/1.jpg → ROOT/novel-03/1.jpg
     const stripped = raw
       .replace(/^\/article\//, "/")
       .replace(/^\//, "");
     absSource = path.join(ROOT, stripped);
   } else {
-    // 相对 md 所在目录
     absSource = path.resolve(mdFileDir, raw);
   }
 
@@ -80,8 +68,6 @@ function resolveLocalImage(href, novelId, mdFileDir) {
   if (relFromRoot.startsWith("..") || path.isAbsolute(relFromRoot)) {
     fail(`图片不在项目目录内: ${absSource}`);
   }
-
-  // 复制到 dist 同相对路径；HTML 在 dist/novel-id/ 下，用相对路径引用
   const absDest = path.join(DIST, relFromRoot);
   const htmlRel = path
     .relative(path.join(DIST, novelId), absDest)
@@ -96,9 +82,7 @@ function resolveLocalImage(href, novelId, mdFileDir) {
   };
 }
 
-/**
- * 用 marked 正确解析 Markdown，并收集需复制的图片
- */
+
 function mdToHtml(md, novelId, mdFileDir, imageCopySet) {
   if (typeof md !== "string") fail("章节内容必须是字符串");
   const text = md.replace(/\r\n/g, "\n").trim();
