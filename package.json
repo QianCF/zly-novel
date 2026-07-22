@@ -1,0 +1,16 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: 你个傻逼，张灵韵怎么会有测试\" && exit 1",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "marked": "^18.0.7"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "novels": [
+    {
+      "id": "novel-01",
+      "title": "全班的妻子",
+      "author": "张灵韵",
+      "description": "这啥鬼啊",
+      "tags": ["校园", "猎奇"],
+      "chapters": [
+        { "id": "1", "title": "第一章", "path": "1.md" },
+        { "id": "2", "title": "第二章", "path": "2.md" },
+        { "id": "3", "title": "第三章", "path": "3.md" },
+        { "id": "4", "title": "第四章", "path": "4.md" },
+        { "id": "5", "title": "第五章", "path": "5.md" },
+        { "id": "6", "title": "第六章", "path": "6.md" },
+        { "id": "7", "title": "第七章", "path": "7.md" },
+        { "id": "8", "title": "尾声", "path": "8.md" }
+      ]
+    },
+    {
+      "id": "novel-02",
+      "title": "姚津昊的修罗场",
+      "author": "张灵韵",
+      "description": "何意味",
+      "tags": ["校园", "猎奇"],
+      "chapters": [
+        { "id": "1", "title": "第一卷：一百三十七张纸条", "path": "1.md" },
+        { "id": "2", "title": "第二卷：六个人的心事", "path": "2.md" },
+        { "id": "3", "title": "第三卷：胖子", "path": "3.md" }
+      ]
+    },
+    {
+      "id": "novel-03",
+      "title": "东方绿洲的十四岁",
+      "author": "张灵韵",
+      "description": "这集神了",
+      "tags": ["校园", "猎奇"],
+      "chapters": [
+        { "id": "0", "title": "前言", "path": "0.md"},
+        { "id": "1", "title": "楔子", "path": "1.md" },
+        { "id": "2", "title": "第一章", "path": "2.md" },
+        { "id": "3", "title": "第二章", "path": "3.md" },
+        { "id": "4", "title": "第三章", "path": "4.md" },
+        { "id": "5", "title": "第四章", "path": "5.md" },
+        { "id": "6", "title": "第五章", "path": "6.md" },
+        { "id": "7", "title": "第六章", "path": "7.md" },
+        { "id": "8", "title": "第七章", "path": "8.md" },
+        { "id": "9", "title": "尾声", "path": "9.md"}
+      ]
+    },
+    {
+      "id" : "novel-04",
+      "title": "初三八班召唤师学园",
+      "author": "张灵韵",
+      "description": "666玄幻小说",
+      "tags": ["猎奇", "玄幻"],
+      "chapters": [
+        { "id": "1", "title": "楔子", "path": "1.md" },
+        { "id": "2", "title": "第一章", "path": "2.md" },
+        { "id": "3", "title": "第二章", "path": "3.md" },
+        { "id": "4", "title": "第三章", "path": "4.md" },
+        { "id": "5", "title": "第四章", "path": "5.md" },
+        { "id": "6", "title": "尾声", "path": "6.md" }
+      ]
+    },
+    {
+      "id": "novel-05",
+      "title": "永宁纪事",
+      "author": "张灵韵",
+      "description": "还有第五关",
+      "tags": ["猎奇", "古风"],
+      "chapters": [
+        { "id": "1", "title": "第一章", "path": "1.md" },
+        { "id": "2", "title": "第二章", "path": "2.md" },
+        { "id": "3", "title": "第三章", "path": "3.md" },
+        { "id": "4", "title": "第四章", "path": "4.md" },
+        { "id": "5", "title": "第五章", "path": "5.md" },
+        { "id": "6", "title": "第六章", "path": "6.md" },
+        { "id": "7", "title": "尾声", "path": "7.md" }
+      ]
+    },
+    {
+      "id": "novel-08",
+      "title": "初三八班·失控",
+      "author": "张灵韵",
+      "description": "暗恋的终极形态",
+      "tags": ["校园", "猎奇"],
+      "chapters": [
+        { "id": "0", "title": "楔子", "path": "0.md" },
+        { "id": "1", "title": "第一章", "path": "1.md" },
+        { "id": "2", "title": "第二章", "path": "2.md" },
+        { "id": "3", "title": "尾声", "path": "3.md" }
+      ]
+    },
+    {
+      "id": "novel-13",
+      "title": "初三·血色缠枝",
+      "author": "张灵韵",
+      "description": "初三八班的又一部猎奇小说",
+      "tags": ["校园", "猎奇"],
+      "chapters": [
+        { "id": "0", "title": "楔子", "path": "0.md"},
+        { "id": "1", "title": "第一章", "path": "1.md" },
+        { "id": "2", "title": "第二章", "path": "2.md" },
+        { "id": "3", "title": "第三章", "path": "3.md" },
+        { "id": "4", "title": "第四章", "path": "4.md" },
+        { "id": "5", "title": "第五章", "path": "5.md" },
+        { "id": "6", "title": "尾声", "path": "6.md" }
+      ]
+    }
+  ]
+}
