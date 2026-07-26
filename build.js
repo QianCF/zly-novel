@@ -599,7 +599,7 @@ function rimrafDist() {
   }
 }
 
-function main() {
+export function build() {
   const data = readJson(INDEX_JSON);
   const novels = data.novels;
 
@@ -631,6 +631,14 @@ function main() {
   console.log(
     `完成：${novels.length} 部小说，${chapterCount} 篇文章，${imageCopySet.size} 张图片 → ${DIST}`
   );
+
+  return path.join(DIST, "index.html");
 }
 
-main();
+const isDirectRun =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isDirectRun) {
+  build();
+}

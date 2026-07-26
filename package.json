@@ -1,15 +1,26 @@
 {
-  "name": "article",
-  "version": "1.0.0",
+  "name": "zly-novel",
+  "version": "2.0.0",
+  "type": "module",
   "main": "build.js",
+  "bin": {
+    "zly-novel": "./cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: 你个傻逼，张灵韵怎么会有测试\" && exit 1",
-    "build": "node build.js"
+    "build": "node build.js",
+    "start": "node cli.js"
   },
-  "keywords": [],
+  "keywords": ["张灵韵", "zly", "小说", "novel"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "张灵韵小说静态站：npx zly-novel 一键构建并打开",
+  "files": [
+    "cli.js",
+    "build.js",
+    "index.json",
+    "novel-*/**"
+  ],
   "dependencies": {
     "marked": "^18.0.7"
   }
